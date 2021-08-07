@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avilon Master </title>
     <!-----Style -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
     <!-----AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!----FontAwesom-->
@@ -19,8 +21,11 @@
 </head>
 <body>
 <header class="header">  
+  <div class="container">
+
+<!----navbar-->
+
   <div class="nav">
-    
     <input type="checkbox" id="nav-check">
     <div class="nav-header">
       <div class="nav-title">
@@ -34,17 +39,22 @@
         <span></span>
       </label>
     </div>
+
     
-    <div class="nav-links">
+    
+    
+    <div class="nav-links ">
       
       <a class="nav-link active" aria-current="page" href="#">Home</a>
-      <a class="nav-link" href="#">About Us</a>
-      <a class="nav-link" href="#">Features</a>
-      <a class="nav-link" href="#">Pricing</a>
-      <a class="nav-link" href="#">Team</a>
+      <a class="nav-link" href="#about_us">About Us</a>
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#prising">Pricing</a>
+      <a class="nav-link" href="#team">Team</a>
+      <a class="nav-link" href="#">Contact Us</a>
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Drop Down
       </a>
+      <!---
       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
         <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
@@ -53,81 +63,37 @@
         <li><a class="dropdown-item" href="#">Drop Down 5</a></li>
         <li><a class="dropdown-item" href="#">Drop Down 6</a></li>
       </ul>
-      <a class="nav-link" href="#">Contact Us</a>
-
-
-    </div>
-  </div>
-
-  <!---
-    <nav class="navbar  navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Avilon</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Drop Down
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
-                  <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
-                  <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
-                  <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
-                  <li><a class="dropdown-item" href="#">Drop Down 5</a></li>
-                  <li><a class="dropdown-item" href="#">Drop Down 6</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
       --->
+    </div>
+
+ 
+
+
+  </div>
     <div class="container">
         <div class="main-title">
             <h1>Welcome to Avilon</h1>
             <p>We are team of talanted designers making websites with Bootstrap</p>
             <button class="btn-main">Get Started</button>
         </div> 
-        <!--
+ 
         <div class="main-img">
          
-           <img class="product-screen-1" src="img/product-screen-1.png" alt="" width="30%" height="auto">
+           <img class="product-screen-1 responsive" src="img/product-screen-1.png" alt="" width="25%" height="auto" top="5%"  >
           
-           <img class="product-screen-2" src="img/product-screen-2.png" alt="" width="30%" height="auto">
+           <img class="product-screen-2 responsive" src="img/product-screen-2.png" alt="" width="30%" height="auto" >
          
-           <img class="product-screen-2" src="img/product-screen-3.png" alt="" width="30%" height="auto">
+           <img class="product-screen-3 responsive" src="img/product-screen-3.png" alt="" width="35%" height="auto">
           
         </div>
-        ---->
+     
     </div>
+  </div>
 </header>
 
 <!-----About As -->
 
-<section class="about_as">
+<section id="about_us" class="about_us">
   <div class="container-fluid">
    <div class="title">
        <h3>About Us</h3>
@@ -136,25 +102,25 @@
         sunt in culpa qui officia deserunt mollit anim id est laborum</p>
    </div>
 
-   <div class="row about_as_content">
+   <div class="row about_us_content">
     
-           <img class="col-md-6 about-img" data-aos='fade-right' data-aos-duration='700'  src="img/about-img.jpg" alt="">
+           <img class="col-md-6 about-img responsive" data-aos='fade-right' data-aos-duration='700'  src="img/about-img.jpg" alt="">
    
-       <div class="col-md-6 about_as_sub " data-aos='fade-left' data-aos-duration='700'>
+       <div class="col-md-6 about_us_sub " data-aos='fade-left' data-aos-duration='700'>
            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elite storium paralate</h4>
            <p><i>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
                deserunt mollit anim id est laborum.</i></p>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip
                ex ea commodo consequat.</p>
-            <ul class="about_as_sub-list">
+            <ul class="about_us_sub-list">
                 <li class="about_as_sub-item">
                     <p><i class="far fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></li>                  
                 </li>
-                <li class="about_as_sub-item">
+                <li class="about_us_sub-item">
                     <p><i class="far fa-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</p></li>                  
                 </li>
-                <li class="about_as_sub-item">
+                <li class="about_us_sub-item">
                     <p><i class="far fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
                       irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p></li>                  
                 </li>
@@ -172,7 +138,9 @@
   </div>
 </section>
 
-<section class="features">
+<!---features--->
+
+<section id="features" class="features">
     <div class="container">
         <div class="row features_content">
            <div class="col-md-4 feautures_img" data-aos='fade-right' data-aos-duration='700'>
@@ -317,7 +285,7 @@
 
 <!----Call to action--> 
 
-<section class="call_to_action">
+<section id="call_to_action" class="call_to_action">
     
     <div class="container">
       <div class="row call_to-title">
@@ -336,7 +304,7 @@
 
 <!----More Feautures--> 
 
-<section class="more_features">
+<section id="more_features" class="more_features">
     <div class="container">
         <div class="title">
             <h3>More Features</h3>
@@ -403,7 +371,7 @@
 
 <!-----Partners----->
 
-<section class="partners">
+<section id="partners" class="partners">
      <div class="container">
 
          <div class="row partners_logo " data-aos="fade-up"
@@ -421,7 +389,7 @@
 
 <!-----Prising------->
  
-<section class="prising">
+<section id="prising" class="prising">
     <div class="container">
         <div class="title">
             <h3>Pricing</h3>
@@ -521,6 +489,7 @@
                     <p><i class="far fa-check-circle"></i>Massa ultricies mi quis hendrerit</p>
                 </li>
             </ul>
+
             <button class="btn-prising">Get Started</button>
 
         </div>
@@ -528,7 +497,9 @@
     </div>
 </section>
 
-<section class="faq">
+<!---faq--->
+
+<section id="faq" class="faq">
   <div class="container">
        <div class="title">
            <h3>Frequently Asked Questions</h3>
@@ -536,88 +507,119 @@
            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
        </div>
        <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
+
+
+    <div class="accordion-item">
+          <h5 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
+              <h6>Saves time </h6>
             </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          </h5>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" color="#fff">
             <div class="accordion-body">
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+             <p>This reason might be the most obvious, but it’s a clear benefit of an FAQ page.
+               Not only does the FAQ page save customers time, it saves employees time as well. 
+               Having an FAQ page ensures customers don’t have to sit on the phone for hours waiting 
+               for simple answers and employees don’t have to individually answer all questions. 
+               Companies dedicate a large portion of their budgets to customer service teams. When 
+               these teams don’t have to focus on answering the frequently asked questions, they can 
+               service other customer issues in a more timely manner. </p>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
+    </div>
+
+    <div class="accordion-item">
+          <h5 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
+              <h6>Earns trust </h6>
             </button>
-          </h2>
+          </h5>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>Information is available at the click of a button, but as we all know, information is not always true. 
+                Because of this, customers are more skeptical than ever before. They hunt for products by sifting 
+                through reviews, looking at the product on multiple websites, and price checking across the internet. </p>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
+    </div>
+
+
+    <div class="accordion-item">
+          <h5 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
+              <h6> Provides new insights </h6>
             </button>
-          </h2>
+          </h5>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>It’s difficult to get into the head of a shopper. Some buy on impulse and others buy after thorough 
+                research. By tracking the clicks on your FAQ page you can gather insights about your product or 
+                service that you didn’t know before. You can then inform your product team of these insights. 
+                From there, the product team can make changes to improve the product or experience. </p>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="accordion-item">
+          <h5 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="headingFour">
+            <h6>  Drives internal page views </h6>
+            </button>
+          </h5>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>If you want your FAQ to be extremely thorough, which it should be, you can link to resources within 
+                your FAQ for your customers to find out more information. Whether you link to a blog that goes 
+                into more detail or a product page, this content helps the shoppers get the full story before 
+                making a purchase. </p>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="accordion-item">
+      <h5 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="headingFive">
+           <h6> Prevents negative reviews</h6>
+          </button>
+      </h5>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>In order to take full advantage of your FAQ page’s ability to improve website SEO, 
+              create one page with all of the questions and then link out to dedicated pages that 
+              answer each question in more depth. </p>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+      <h5 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="headingSix">
+            <h6>   When is an FAQ page appropriate? </h6>
+          </button>
+      </h5>
+         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>If you’re considering making an FAQ page and don’t know if it’s completely necessary, 
+                that’s ok. An FAQ page is almost always appropriate. If you get lots of the same 
+                questions over and over again, then you definitely need to create an FAQ page. 
+                When you have a blog with a multitude of great content, an FAQ page is needed 
+                to educate customers about your product through those articles. </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-      </div>
-
-
+    </div>
   </div>
 </section>
 
-<section class="team">
+<!---team--->
+
+<section id="team" class="team">
    <div class="container">
       <div class="title">
-          <h3>Our Team</h3>
+         <h3>Our Team</h3>
           <hr>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
       </div>
@@ -676,14 +678,12 @@
             </div>
         </div>
       </div>
-
-
    </div>
 </section>
 
 <!-----Gallery-->
 
-<section class="gallery">
+<section id="gallery" class="gallery">
     <div class="title">
         <h3>Gallery</h3>
         <hr>
@@ -766,7 +766,6 @@
             </form>
             <button class="btn-footer">Send Message</button>
          </div>
-
      </div>
    </div>
 </footer>
